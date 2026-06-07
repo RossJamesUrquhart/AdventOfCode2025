@@ -1,5 +1,7 @@
 
 def part_1(input, start):
+    # Function is based on checking after a series of safe inputs, how many times the value was 0.
+    # This is done by keeping track of the current value and counting how many times it becomes 0 after processing each input.
     count = 0
 
     for input in data:
@@ -18,6 +20,8 @@ def part_1(input, start):
     return count
 
 def part_2(input, start):
+    # The second part of the problem is to count how many times the value was 0 during the process, not just at the end of each input. 
+    # This is done by checking every intermediate value as we process each input and counting how many times it becomes 0.
     current = start
     count = 0
     num_zeroes = 0
